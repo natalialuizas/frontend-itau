@@ -1,0 +1,27 @@
+.entertainments{
+    display: grid;
+    grid-gap: 1rem;
+
+    @include devices(tablet-landspace){
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.entertainments-list{
+    display: grid;
+    grid-gap: 2rem;
+
+    @include devices(tablet-portrait){
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.pub{
+    display: none;
+
+    @include devices(tablet-landspace){
+        display: grid;
+        justify-content: center;
+    }
+  }
+  

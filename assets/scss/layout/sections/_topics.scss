@@ -1,0 +1,9 @@
+.topics{
+    display: grid;
+    margin-bottom: 6rem;
+
+    @include devices(tablet-portrait){
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 2rem;
+    }
+}

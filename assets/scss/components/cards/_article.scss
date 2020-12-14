@@ -1,0 +1,14 @@
+.article-card {
+  border-bottom: 1px solid #E2E4E5;
+
+  .article-paragraph {
+    color: $color-blue-dark;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+}

@@ -1,0 +1,41 @@
+.drawing-card {
+  display: flex;
+  margin-bottom: 2rem;
+
+  .drawing-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  .drawing-description {
+    padding: 2rem;
+    .drawing-title {
+      color: $color-secondary;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+    }
+
+    .drawing-paragraph {
+      color: $color-blue-dark;
+      font-size: 1.7rem;
+      padding-top: 1rem;
+    }
+  }
+}
+
+.pub2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+
+
+  @media only screen and (min-width: 700px) {
+    justify-content: flex-start;
+  }
+
+  @include devices(tablet-landspace){
+    display: none;
+  }
+
+}

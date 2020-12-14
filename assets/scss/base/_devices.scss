@@ -1,0 +1,16 @@
+@mixin devices($device) {
+	@if $device == tablet-portrait {
+		@media only screen and (min-width: 600px) {
+			@content;
+		}
+	} @else if $device == tablet-landspace {
+		@media only screen and (min-width: 1099px) {
+			@content;	
+		}
+    }
+    @else if $device == desktop {
+		@media only screen and (min-width: 1200px) {
+			@content;	
+		}
+	}
+}

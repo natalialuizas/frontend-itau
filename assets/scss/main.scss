@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+// 1. Configuration
+@import 'base/reset',
+'base/variables',
+'base/devices',
+'base/base';
+
+// 2. Page-specific styles
+@import 'layout/templates/header',
+'layout/templates/footer',
+'layout/sections/entertainments',
+'layout/sections/articles',
+'layout/sections/topics';
+
+// 3. Components
+@import 'components/cards/drawing',
+'components/cards/topic',
+'components/cards/entertainment',
+'components/cards/article',
+'components/carousel';
