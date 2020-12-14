@@ -6,6 +6,8 @@
 Criação de uma página utilizando HTML5, SASS e grids para avaliar conhecimento em design responsivo (Response Web Design).
 </p>
 
+[Acessar site](https://frontend-itau.netlify.app/)
+
 ---
 
 ## Pré-requisitos
