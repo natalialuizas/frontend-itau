@@ -33,7 +33,7 @@
     justify-content: flex-start;
   }
 
-  @include devices(tablet-landspace) {
+  @media only screen and (min-width: 972px) {
     display: none;
   }
 }
