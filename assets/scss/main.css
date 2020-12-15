@@ -685,7 +685,7 @@ body {
 
 .slide-info {
   position: absolute;
-  bottom: -5rem;
+  bottom: -4rem;
   left: 0;
 }
 
@@ -756,7 +756,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 441px) {
+@media only screen and (min-width: 394px) {
   .slide-info {
     bottom: -3rem;
   }
