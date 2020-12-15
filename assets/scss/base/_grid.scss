@@ -3,7 +3,9 @@
   flex-wrap: wrap;
 }
 
-.grid-item, .grid-item-2, .grid-area-2{
+.grid-item,
+.grid-item-2,
+.grid-area-2 {
   width: 100vw;
   margin: 0 0 1vw 0;
 
@@ -48,5 +50,6 @@
 
   .grid-container {
     display: grid;
+    margin-bottom: 1rem;
   }
 }

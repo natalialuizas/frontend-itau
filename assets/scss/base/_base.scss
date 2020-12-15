@@ -53,3 +53,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+@supports (display: grid) {
+  .title {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+}

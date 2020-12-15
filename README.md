@@ -33,3 +33,7 @@ $ cd frontend-itau
 ## Tecnologias utilizadas no projeto
   - HTML5
   - SASS 
+
+
+## Suporte IE
+![Navegador IE](./assets/gif/ie.gif)
