@@ -1,0 +1,149 @@
+.carousel {
+  margin-top: 15rem;
+  margin-bottom: 9rem;
+  width: 100%;
+  position: relative;
+
+  @include devices(tablet-landspace) {
+    margin-top: 6rem;
+  }
+
+  &::after,
+  &::before {
+    display: none;
+
+    @include devices(desktop) {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      z-index: 1;
+      background-color: $color-white;
+      background-repeat: no-repeat;
+      background-position: center center;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      outline: none;
+      top: 20rem;
+      width: 5rem;
+      height: 5rem;
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+  }
+
+  &::before {
+    left: -2rem;
+    background-image: url("../img/arrow_left-icon.svg");
+  }
+
+  &::after {
+    right: -2rem;
+    background-image: url("../img/arrow_right-icon.svg");
+  }
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.carousel-navigation {
+  position: absolute;
+  right: 0;
+  bottom: -6rem;
+  left: 0;
+  text-align: center;
+
+  @include devices(tablet-portrait) {
+    bottom: -3rem;
+  }
+}
+
+.carousel-navigation-list,
+.carousel-navigation-item {
+  display: inline-block;
+}
+
+.carousel-navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: $color-blue;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.slide-badge {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 3rem;
+  background-color: rgba(52, 151, 219, 0.8);
+  margin-bottom: 4rem;
+  min-width: 250px;
+  max-width: 300px;
+
+  .slide-title {
+    font-size: 1.5rem;
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+  }
+
+  @include devices(tablet-portrait) {
+    margin-bottom: 1rem;
+  }
+
+  @include devices(desktop) {
+    .slide-title {
+      font-size: 1.8rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.slide-info {
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+
+  @media only screen and (min-width: 441px) {
+    bottom: -3rem;
+  }
+
+  @include devices(tablet-portrait) {
+    bottom: 3rem;
+    margin: 0 2rem;
+  }
+}
+
+.slide-description {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $color-blue-dark;
+
+  p:last-child {
+    display: none;
+
+    @include devices(tablet-portrait) {
+      display: inline-block;
+    }
+  }
+
+  @include devices(tablet-portrait) {
+    color: $color-white;
+    line-height: 2.5rem;
+  }
+
+  @include devices(desktop) {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}

@@ -25,8 +25,7 @@
     }
   }
 
-  @include devices(tablet-portrait){
-   margin-bottom:  0;
+  @include devices(tablet-portrait) {
+    margin-bottom: 0;
   }
-
 }

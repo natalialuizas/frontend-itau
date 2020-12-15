@@ -1,6 +1,5 @@
-
 .footer {
-    background-color:$color-blue-dark;
+  background-color: $color-blue-dark;
 
   .background-goback {
     padding: 2rem;
@@ -25,29 +24,22 @@
 
     .footer-logo {
       display: none;
-       
-        @include devices(tablet-portrait){
-     
-          margin-right: 5rem;
-        }
 
-        @include devices(tablet-landspace){
-          display: inline-block;
-          margin-right: 8rem;
-        }
+      @include devices(tablet-portrait) {
+        margin-right: 5rem;
+      }
+
+      @include devices(tablet-landspace) {
+        display: inline-block;
+        margin-right: 8rem;
+      }
     }
-      
+
     .footer-paragraph {
-        color: $color-white;
-        font-size: 1.4rem;
-        width: 600px;
-        align-self: center;
+      color: $color-white;
+      font-size: 1.4rem;
+      width: 600px;
+      align-self: center;
     }
   }
 }
- 
-  
-
-
- 
-  
