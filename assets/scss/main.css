@@ -658,18 +658,11 @@ body {
   text-align: center;
 }
 
-@media only screen and (min-width: 600px) {
-  .carousel-navigation {
-    bottom: -3rem;
-  }
-}
-
-.carousel-navigation-list,
-.carousel-navigation-item {
+.carousel-navigation .carousel-navigation-list {
   display: inline-block;
 }
 
-.carousel-navigation-button {
+.carousel-navigation .carousel-navigation-item {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
@@ -684,7 +677,19 @@ body {
   transition: transform 0.1s, -webkit-transform 0.1s;
 }
 
-.slide-badge {
+@media only screen and (min-width: 600px) {
+  .carousel-navigation {
+    bottom: -3rem;
+  }
+}
+
+.slide-info {
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+}
+
+.slide-info .slide-badge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,7 +704,7 @@ body {
   max-width: 300px;
 }
 
-.slide-badge .slide-title {
+.slide-info .slide-badge .slide-title {
   font-size: 1.5rem;
   color: #ECF0F1;
   text-transform: uppercase;
@@ -709,22 +714,46 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
-  .slide-badge {
+  .slide-info .slide-badge {
     margin-bottom: 1rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .slide-badge .slide-title {
+  .slide-info .slide-badge .slide-title {
     font-size: 1.8rem;
     margin-right: 1rem;
   }
 }
 
-.slide-info {
-  position: absolute;
-  bottom: -5rem;
-  left: 0;
+.slide-info .slide-description {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2C3E50;
+}
+
+.slide-info .slide-description p:last-child {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .slide-info .slide-description p:last-child {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .slide-info .slide-description {
+    color: #ECF0F1;
+    line-height: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .slide-info .slide-description {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
 }
 
 @media only screen and (min-width: 441px) {
@@ -737,36 +766,6 @@ body {
   .slide-info {
     bottom: 3rem;
     margin: 0 2rem;
-  }
-}
-
-.slide-description {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2C3E50;
-}
-
-.slide-description p:last-child {
-  display: none;
-}
-
-@media only screen and (min-width: 600px) {
-  .slide-description p:last-child {
-    display: inline-block;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .slide-description {
-    color: #ECF0F1;
-    line-height: 2.5rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .slide-description {
-    font-size: 3rem;
-    line-height: 4rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
