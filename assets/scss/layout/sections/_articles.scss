@@ -1,21 +1,23 @@
-.articles {
-  display: grid;
-  grid-gap: 2rem;
-  margin-top: 6rem;
+@supports (display: grid) {
+  .articles {
+    display: grid;
+    grid-gap: 2rem;
+    margin-top: 6rem;
 
-  .articles-title {
-    color: $color-primary;
-  }
+    @include devices(tablet-portrait) {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
 
-  .drawings-title {
-    color: $color-secondary;
+    @include devices(tablet-landspace) {
+      margin-bottom: 15rem;
+    }
   }
+}
 
-  @include devices(tablet-portrait) {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
+.articles-title {
+  color: $color-primary;
+}
 
-  @include devices(tablet-landspace) {
-    margin-bottom: 15rem;
-  }
+.drawings-title {
+  color: $color-secondary;
 }

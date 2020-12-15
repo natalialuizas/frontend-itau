@@ -1,0 +1,52 @@
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item, .grid-item-2, .grid-area-2{
+  width: 100vw;
+  margin: 0 0 1vw 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.grid-item {
+  @include devices(tablet-portrait) {
+    width: 30vw;
+    margin: 1vw;
+  }
+}
+
+.grid-item-2 {
+  @include devices(tablet-portrait) {
+    width: 45vw;
+    margin: 1vw;
+  }
+
+  @include devices(tablet-landspace) {
+    width: 30vw;
+    margin: 1vw;
+  }
+}
+
+.grid-area-2 {
+  @include devices(tablet-landspace) {
+    width: 65vw;
+    margin: 1vw;
+  }
+}
+
+@supports (display: grid) {
+  .grid-item,
+  .grid-item-2,
+  .grid-area-2 {
+    margin: 0;
+    width: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+  }
+}
