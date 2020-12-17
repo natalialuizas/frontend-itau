@@ -189,6 +189,11 @@ table {
     margin: 0;
     width: 100%;
   }
+  .grid-item:last-child,
+  .grid-item-2:last-child,
+  .grid-area-2:last-child {
+    margin-bottom: 2rem;
+  }
   .grid-container {
     display: -ms-grid;
     display: grid;
